@@ -35,8 +35,8 @@ public class InboxAPIApplication {
     
     @PostConstruct
     public void init() {
-        folderRepository.save(new Folder("SamanthaBooke", "Inbox", "blue"));
-        folderRepository.save(new Folder("HenryLowe", "Sent", "green"));
-        folderRepository.save(new Folder("LorettaScott", "Important", "yellow"));
+        folderRepository.save(new Folder("Rume7", "Inbox", "blue"));
+        folderRepository.save(new Folder("Rume7", "Sent", "green"));
+        folderRepository.save(new Folder("Rume7", "Important", "yellow"));
     }
 }

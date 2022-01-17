@@ -50,11 +50,11 @@
 
         <div class="container">
             <header>
-                <h1>Hello, name: </h1>
+                <h1>Hello, Name: </h1>
             </header>
 
             <nav>
-                <div th:insert="components/folder-list :: folder-list (panelName = 'Folders', folders=${defaultFolders})"></div>
+                <div th:insert="components/folder-list :: folder-list (panelName = 'Default Folders', folders=${defaultFolders})"></div>
                 <div th:insert="components/folder-list :: folder-list (panelName = 'User Folders', folders=${userFolders})"></div>
             </nav>
 
