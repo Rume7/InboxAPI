@@ -26,9 +26,6 @@ public class InboxController {
     @GetMapping(value="/")
     public String homePage(@AuthenticationPrincipal OAuth2User principal, Model model) {
         
-        System.out.println(principal);
-        //String id = principal.getAttribute("login");
-        
         if (principal == null || !StringUtils.hasText(principal.getAttribute("login"))) {
             return "index";
         }
