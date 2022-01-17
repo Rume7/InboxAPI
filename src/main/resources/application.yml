@@ -5,9 +5,7 @@ spring:
                 registration:
                     github:
                         client-id: Iv1.eda97a2f8ec6c553
-                        client-secret: 3aec1599cf625aa1398fc7088f9d765950675a01
-
-
+                        client-secret: 3aec1599cf625aa1398fc7088f9d765950675a01234
 
     data:
         cassandra:
