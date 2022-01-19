@@ -22,7 +22,7 @@ public class Message {
     private String from;
     
     @CassandraType(type= Name.LIST)
-    private List<String> to;
+    private List<String> tos;
     
     @CassandraType(type= Name.TEXT)
     private String subject;
@@ -37,9 +37,7 @@ public class Message {
         this.from = from;
         this.subject = subject;
         this.body = body;
-        to.forEach(action -> {
-            to.add(action);
-        });
+        to.forEach(action -> {tos.add(action);});
     }
 
     public UUID getId() {
@@ -59,13 +57,11 @@ public class Message {
     }
 
     public List<String> getTo() {
-        return to;
+        return tos;
     }
 
     public void setTo(List<String> to) {
-        to.forEach(action -> {
-            to.add(action);
-        });
+        to.forEach(action -> {tos.add(action);});
     }
 
     public String getSubject() {
